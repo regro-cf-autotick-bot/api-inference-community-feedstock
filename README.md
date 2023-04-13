@@ -1,11 +1,11 @@
-About api-inference-community
-=============================
+About api-inference-community-feedstock
+=======================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/api-inference-community-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/huggingface/api-inference-community
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/api-inference-community-feedstock/blob/main/LICENSE.txt)
 
 Summary: A package with helper tools to build an API Inference docker app for Hugging Face API inference using huggingface_hub
 
