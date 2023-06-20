@@ -1,5 +1,5 @@
 {% set name = "api-inference-community" %}
-{% set version = "0.0.28" %}
+{% set version = "0.0.31" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/api_inference_community-{{ version }}.tar.gz
-  sha256: de50e5f9ab0256c2d80b5cbd1f4dfca0d4d0329019692351d33fe73f69084829
+  sha256: f503e2443102ed3fdde0e1adcd84a684a89e98e4839ec2666c7b81002a2e48fa
 
 build:
   noarch: python
