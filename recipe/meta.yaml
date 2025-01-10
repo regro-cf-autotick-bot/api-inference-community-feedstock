@@ -6,18 +6,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/api_inference_community-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/api_inference_community-{{ version }}.tar.gz
   sha256: de50e5f9ab0256c2d80b5cbd1f4dfca0d4d0329019692351d33fe73f69084829
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - datasets >=2.2
     - huggingface_hub >=0.5.1
@@ -25,7 +25,7 @@ requirements:
     - parameterized >=0.8.1
     - pillow >=8.2.0
     - pydantic >=1.8.1
-    - python >=3.6
+    - python >={{ python_min }}
     - starlette >=0.14.2
 
 test:
@@ -35,6 +35,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: http://github.com/huggingface/api-inference-community
